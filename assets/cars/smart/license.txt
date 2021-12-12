@@ -1,0 +1,11 @@
+Model Information:
+* title:	Vehicle - Smart
+* source:	https://sketchfab.com/3d-models/vehicle-smart-e3c882bacc604e2abe8784035af3fc75
+* author:	KITSUNE GRAPHICS (https://sketchfab.com/kitsunegraphics)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Vehicle - Smart" (https://sketchfab.com/3d-models/vehicle-smart-e3c882bacc604e2abe8784035af3fc75) by KITSUNE GRAPHICS (https://sketchfab.com/kitsunegraphics) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
