@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Final Project Grafkom</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+		<div id="loadings">
+
+			<div id="models_loading">
+				<div>
+				  <div class="box">
+					<div class="percent">
+					  <svg>
+						<circle cx="70" cy="70" r="70"></circle>
+						<circle cx="70" cy="70" r="70"></circle>
+					  </svg>
+					  <div class="num">
+						<h2 id="get_models_progress">0<span>%</span></h2>
+					  </div>
+					</div>
+					<h2 class="text">Loading Models</h2>
+				  </div>
+				</div>
+				
+			</div>
+	
+			<div id="sounds_loading">
+				<div class="box">
+					<div class="percent">
+					  <svg>
+						<circle cx="70" cy="70" r="70"></circle>
+						<circle cx="70" cy="70" r="70"></circle>
+					  </svg>
+					  <div class="num">
+						<h2 id="get_sounds_progress">0<span>%</span></h2>
+					  </div>
+					</div>
+					<h2 class="text">Loading Sounds</h2>
+				  </div>
+				</div>
+			</div>	
+
+
+		<div id="main_menu" hidden>
+			
+		</div>
+		<div id="authors" hidden>
+			
+			<div id="display_start">
+				<div>
+					<h1>
+						<b>Final Project Grafika Komputer </b><br>
+					</h1>
+				</div>
+			
+	
+				<p>Press <b>Enter</b> to start!</p>
+			</div>
+			<div id="commands" hidden>
+				<h2><b>Commands:</b></h2>
+				<h3><b>W/UpArrow</b>: Go Ahead</h3>
+				<h3>S/DownArrow : Go Back</h3>
+				<h3>A/LeftArrow : Go Left</h3>
+				<h3>D/RightArrow : Go Right</h3>
+				<h3>M : Mute/Unmute Sounds</h3>
+				<h3>Esc/SpaceBar : Pause/Play</h3>
+			</div>
+		</div>
+		<div id="settings" hidden>
+			<div>
+				<h2><b>Difficulty:<b></h2>
+				<h2 id="difficulty">Medium</h2><br>
+				<h2>Choose Difficulty: </h2><br>
+				<button id="button_diff1" class="button diff1" onclick="diffEasy()">Easy</button>
+				<button id="button_diff2" class="button diff2" onclick="diffMed()">Medium</button>
+				<button id="button_diff3" class="button diff3" onclick="diffHard()">Hard</button>
+				<br>
+				<br>
+				<h2>Press 'C' to display commands</h2>
+			</div>
+		</div>
+		<div id="game_over" hidden>
+
+			<div class="gameover">
+			<p> GAME </p>
+			<p> OVER </p>
+			</div>
+		
+			<div class="continue"> <p> Press Enter or Reload the page to play again </p> </div>
+			<div class="score_result"> <p> Score: </p> <p id="score_number"></p></div>
+		
+		</div>
+		<div id="health_and_score" hidden>
+			<div class="Row">
+					<img id="tank1" src="./assets/images/fuel_tank_1.png"></img>
+					<img id="tank2" src="./assets/images/fuel_tank_2.png"></img>
+					<img id="tank3" src="./assets/images/fuel_tank_3.png"></img>
+					<div id ="time_counter_class" class="Column">
+						<img id="time_img" style="width: 5em;" src="./assets/images/time.png"></img>
+						<h2 id="time_counter">2</h2>
+					</div>
+			</div>
+		</div>
+		<script src="js/three.js"></script>
+		<script src="js/main.js" type="module"></script>
+		<script>
+			function diffEasy(){
+				document.getElementById("difficulty").innerHTML = "Easy";
+			}
+			function diffMed(){
+				document.getElementById("difficulty").innerHTML = "Medium";
+			}
+			function diffHard(){
+				document.getElementById("difficulty").innerHTML = "Hard";
+			}
+		</script>
+	</body>
+</html>
